@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Nov 2026 00:36:45 GMT</lastBuildDate><item><title><![CDATA[Spring Cloud 2026.0.0-RC2 (aka Paddington) Has Been Released]]></title><link>https://spring.io/blog/2026/11/05/spring-cloud-2026-0-0-RC2-has-been-released</link><guid isPermaLink="true">https://spring.io/blog/2026/11/05/spring-cloud-2026-0-0-RC2-has-been-released</guid><dc:creator><![CDATA[ryanjbaxter]]></dc:creator><pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the community, I am pleased to announce that the Release Candidate 2 (RC2) of the &lt;a href=&quot;https://cloud.spring.io&quot;&gt;Spring Cloud 2026.0.0-RC2&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href=&quot;https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies/2026.0.0-RC2/&quot;&gt;the Spring milestone repository&lt;/a&gt;. You can check out the 2026.0.0-RC2 &lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2026.0-Release-Notes&quot;&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;notable-changes-in-the-202600-rc2-release-train&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#notable-changes-in-the-202600-rc2-release-train&quot; aria-label=&quot;notable changes in the 202600 rc2 release train permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Notable Changes in the 2026.0.0-RC2 Release Train&lt;/h2&gt;
+&lt;p&gt;This release is based on Spring Boot &lt;code&gt;4.2.0-RC2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A complete list of changes can be found in the &lt;a href=&quot;https://github.com/orgs/spring-cloud/projects/201&quot;&gt;project board on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;spring-cloud-config&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring-cloud-config&quot; aria-label=&quot;spring cloud config permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring Cloud Config&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud Storage now supported as a backend of the Config Server (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-config/pull/3343&quot;&gt;#3343&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Plain text and binary files can now be fetched from the Config Server as a &lt;code&gt;Resource&lt;/code&gt; (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-config/pull/3355&quot;&gt;#3355&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;spring-cloud-gateway&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring-cloud-gateway&quot; aria-label=&quot;spring cloud gateway permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring Cloud Gateway&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add LocalResponseCache filter to Spring Cloud Gateway Server Web MVC (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-gateway/pull/4249&quot;&gt;#4249&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;spring-cloud-openfeign&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring-cloud-openfeign&quot; aria-label=&quot;spring cloud openfeign permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring Cloud Openfeign&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Send the nested objects of &lt;code&gt;@SpringQueryMap&lt;/code&gt; as nested query parameters (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-openfeign/pull/1448&quot;&gt;#1448&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following modules were updated as part of 2026.0.0-RC2:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Module&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;th&gt;Issues&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Build&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-build/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Circuitbreaker&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-circuitbreaker/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Commons&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-commons/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Config&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-config/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Consul&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-consul/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Function&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-function/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Gateway&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-gateway/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Kubernetes&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-kubernetes/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Netflix&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-netflix/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Openfeign&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-openfeign/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Starter Build&lt;/td&gt;
+&lt;td&gt;2026.0.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-release/releases/tag/v2026.0.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Stream&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-stream/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Task&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-task/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Vault&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-vault/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Zookeeper&lt;/td&gt;
+&lt;td&gt;5.1.0-RC2&lt;/td&gt;
+&lt;td&gt;(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-zookeeper/releases/tag/v5.1.0-RC2&quot;&gt;issues&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href=&quot;https://github.com/spring-cloud/&quot;&gt;GitHub&lt;/a&gt;, on &lt;a href=&quot;https://gitter.im/spring-cloud/spring-cloud&quot;&gt;Gitter&lt;/a&gt;, on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-cloud&quot;&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href=&quot;https://twitter.com/SpringCloud&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;properties&gt;
+    &amp;#x3C;spring-cloud.version&gt;2026.0.0-RC2&amp;#x3C;/spring-cloud.version&gt;
+&amp;#x3C;/properties&gt;
+&amp;#x3C;dependencyManagement&gt;
+    &amp;#x3C;dependencies&gt;
+        &amp;#x3C;dependency&gt;
+            &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+            &amp;#x3C;artifactId&gt;spring-cloud-dependencies&amp;#x3C;/artifactId&gt;
+            &amp;#x3C;version&gt;${spring-cloud.version}&amp;#x3C;/version&gt;
+            &amp;#x3C;type&gt;pom&amp;#x3C;/type&gt;
+            &amp;#x3C;scope&gt;import&amp;#x3C;/scope&gt;
+        &amp;#x3C;/dependency&gt;
+    &amp;#x3C;/dependencies&gt;
+&amp;#x3C;/dependencyManagement&gt;
+&amp;#x3C;dependencies&gt;
+    &amp;#x3C;dependency&gt;
+        &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+        &amp;#x3C;artifactId&gt;spring-cloud-starter-config&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;/dependency&gt;
+    &amp;#x3C;dependency&gt;
+        &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+        &amp;#x3C;artifactId&gt;spring-cloud-starter-netflix-eureka-client&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;/dependency&gt;
+    ...
+&amp;#x3C;/dependencies&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-groovy&quot;&gt;plugins {
+  id &apos;java&apos;
+  id &apos;org.springframework.boot&apos; version &apos;4.2.0-RC2&apos;
+  id &apos;io.spring.dependency-management&apos; version &apos;1.1.7&apos;
+}
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  set(&apos;springCloudVersion&apos;, &quot;2026.0.0-RC2&quot;)
+}
+
+dependencies {
+  implementation &apos;org.springframework.cloud:spring-cloud-starter-config&apos;
+  implementation &apos;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&apos;
+}
+
+dependencyManagement {
+  imports {
+    mavenBom &quot;org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[A Bootiful Podcast: Temporal.io's Cornelia Davis]]></title><link>https://spring.io/blog/2026/11/05/a-bootiful-podcast-cornelia-davis</link><guid isPermaLink="true">https://spring.io/blog/2026/11/05/a-bootiful-podcast-cornelia-davis</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! In this nostalgic, wide-ranging conversation, I revisit my first podcast episode from 2018 with Cornelia Davis and catch up on her career across Pivotal, VMware, Weaveworks, Amazon, Kubernetes, and now Temporal. I reflect on the enduring relevance of cloud-native patterns, workflow engines, and the evolution of software delivery from infrastructure-centric systems to durable execution.&lt;/p&gt;
+&lt;p&gt;Cornelia explains Temporal in depth: an open-source platform for long-running, stateful, asynchronous workflows that preserves execution history so processes can resume exactly where they left off, even after failures or long waits. We cover human-in-the-loop workflows, event sourcing, multi-language SDKs, open source versus cloud, and why Temporal is especially well suited for modern AI and agentic applications. She also highlights the Temporal Agent Harness, strong typing, policy-based approvals, and use cases ranging from enterprise processes to OpenAI-scale agent infrastructure.&lt;/p&gt;
+&lt;p&gt;I close the episode with practical pointers for learning more through Temporal’s website, blog, community resources, and GitHub, plus Cornelia’s preferred online presence on LinkedIn.&lt;/p&gt;
+&lt;p&gt;#temporal #ai #workflows #engineering #pivotal #agents #harnesses #durableexecution&lt;/p&gt;
+&lt;iframe title=&quot;Temporal.io’s Cornelia Davis&quot; allowtransparency=&quot;true&quot; height=&quot;300&quot; width=&quot;100%&quot; style=&quot;border: none; min-width: min(100%, 430px);height:300px;&quot; scrolling=&quot;no&quot; data-name=&quot;pb-iframe-player&quot; src=&quot;https://www.podbean.com/player-v2/?from=embed&amp;i=b7hqc-1ba446f-pb&amp;square=1&amp;share=1&amp;download=1&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;rtl=0&amp;logo_link=&amp;btn-skin=7&amp;size=300&quot; loading=&quot;lazy&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content:encoded></item><item><title><![CDATA[This Week in Spring - November 3rd, 2026 ]]></title><link>https://spring.io/blog/2026/11/03/this-week-in-spring-november-3rd-2026</link><guid isPermaLink="true">https://spring.io/blog/2026/11/03/this-week-in-spring-november-3rd-2026</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&apos;s Tuesday, and you know what that means? I&apos;m thinking about production. Now, to be fair, I&apos;m always thinking about production. But recently, I&apos;ve been spending the weekend just overjoyed at how simple it was to get Cloud Foundry working on my laptop, in Docker, with &lt;a href=&quot;https://github.com/cloudfoundry/kind-deployment&quot;&gt;this GitHub repository&lt;/a&gt;. You see, I normally rely on an internal cluster at work to try out the latest and greatest in the platform, but I&apos;ve always wanted to run the whole thing locally. It&apos;s like &lt;em&gt;four&lt;/em&gt; steps. But don&apos;t even do those steps. Instead, just launch your favorite AI and point it to the instructions. You&apos;ll just need to have Docker and kind running on your host, and your AI agent will take care of the rest. I used Claude, but you do you. Why do I mention this? I love Cloud Foundry. It&apos;s like if you took the ideals of Spring Boot and applied them to a platform where your applications run. Strong opinions, loosely held. The platform and the framework, combined, let me focus on the important stuff: getting to production.&lt;/p&gt;
+&lt;p&gt;You wanna try it out? Why not!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;First&lt;/em&gt;, install Cloud Foundry in kind as explained above.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Second&lt;/em&gt;, install the &lt;code&gt;cf&lt;/code&gt; CLI.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;on macOS:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew install cloudfoundry/tap/cf-cli@8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;on Windows:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;# Using Chocolatey
+choco install cloudfoundry-cli
+
+# Or using Winget
+winget install CloudFoundry.cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;on Linux, you can probably just use your distro&apos;s package manager and, failing that, use this:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;
+curl -L &quot;https://packages.cloudfoundry.org/stable?release=linux64-binary&amp;#x26;version=v8&amp;#x26;source=github&quot; | tar -zx
+
+# Move to your path
+sudo mv cf8 /usr/local/bin/cf8
+sudo mv cf /usr/local/bin/cf
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Third&lt;/em&gt;, build a Spring Boot application. Hit the Spring Initializr and create a new application using Java 17, and add &lt;code&gt;Web&lt;/code&gt;. Here&apos;s what I put at the bottom of my &lt;code&gt;DemoApplication&lt;/code&gt; class:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Controller
+@ResponseBody
+class HelloController {
+
+	@GetMapping(&quot;/&quot;)
+	Map&amp;#x3C;String, String&gt; hello() {
+		return Map.of(&quot;name&quot;, &quot;Hello, Cloud Foundry!&quot;);
+	}
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then in the command line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./mvnw package &amp;#x26;&amp;#x26; cd target &amp;#x26;&amp;#x26; cf push -p *jar myapp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After 30 seconds or so, it&apos;ll be done and you can interrogate the application with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;cf applications
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;TIP: you could also use &lt;code&gt;cf a&lt;/code&gt; as an alias for &lt;code&gt;cf applications&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You&apos;ll see the URL of the application in the output. Bring up the application and you&apos;re off to the races!&lt;/p&gt;
+&lt;p&gt;Anyway, enough chit-chat about my new obsession... let&apos;s dive into this week&apos;s roundup!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;guess what: we&apos;re back with yet another amazing recipe from Craig Walls, looking &lt;a href=&quot;https://www.linkedin.com/pulse/spring-ai-recipe-rendering-rich-uis-mcpapps-craig-walls-ig3zc/&quot;&gt;at rendering rich UIs with MCP applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and another one, too: &lt;a href=&quot;https://www.linkedin.com/pulse/spring-ai-recipe-speeding-up-rag-faster-embeddings-craig-walls-xhvfc?trk=public_post_feed-article-content&quot;&gt;speeding up RAG with faster embeddings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Boot 3.5 is out of support: a practical, &lt;a href=&quot;https://mirfanarshad.medium.com/spring-boot-3-5-is-out-of-support-a-practical-step-by-step-spring-boot-4-migration-guide-2c96218d6522&quot;&gt;step-by-step Spring Boot 4 migration guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I love Michael Redlich&apos;s &lt;a href=&quot;https://www.infoq.com/news/2026/10/spring-news-roundup-oct19-2026/&quot;&gt;amazing new Spring News roundup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a nice article on ADT Mag: &lt;a href=&quot;https://adtmag.com/articles/2026/10/30/spring-boot-4dot2-release-candidate-targets-startup-performance-and-upgrade-checks.aspx&quot;&gt;Spring Boot 4.2 release candidate targets startup performance upgrade checks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;our friend Siva has a nice post on &lt;a href=&quot;https://www.youtube.com/watch?v=H-Xtukxd1ao&quot;&gt;harness engineering for Java and Spring Boot applications, too&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I really enjoyed his video on &lt;a href=&quot;https://youtu.be/fHkVkF3Pkv0?si=B0SaKyZ78VT6EyJR&quot;&gt;spec-driven development, too&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[A Bootiful Podcast: 'Data Geekery' with JOOQ creator Lukas Eder]]></title><link>https://spring.io/blog/2026/10/29/a-bootiful-podcast-lukas-eder</link><guid isPermaLink="true">https://spring.io/blog/2026/10/29/a-bootiful-podcast-lukas-eder</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! In this conversation, Josh Long explores how JOOQ turns SQL into a type-safe, fluent Java language—making complex database work safer, cleaner, and far more expressive. They cover everything from dynamic SQL transformation and cross-dialect support to low-level security, stored procedures, views, and the realities of working with modern databases like DuckDB, ClickHouse, Redshift, and more.&lt;/p&gt;
+&lt;p&gt;Along the way, Lucas reflects on the origins of JOOQ, why he built it, and how the project has evolved from a clever Java DSL into a serious platform for enterprise-grade database development. The discussion also touches on AI-assisted debugging, the enduring relevance of SQL, and how strong typing can dramatically reduce mental overhead for developers and DBAs alike.&lt;/p&gt;
+&lt;p&gt;If you care about databases, Java, or writing better software with less friction, this episode is a masterclass in thoughtful engineering and pragmatic elegance.&lt;/p&gt;
+&lt;iframe title=&quot;”Data Geekery” with JOOQ creator Lukas Eder&quot; allowtransparency=&quot;true&quot; height=&quot;300&quot; width=&quot;100%&quot; style=&quot;border: none; min-width: min(100%, 430px);height:300px;&quot; scrolling=&quot;no&quot; data-name=&quot;pb-iframe-player&quot; src=&quot;https://www.podbean.com/player-v2/?from=embed&amp;i=xc6hq-1b98d05-pb&amp;square=1&amp;share=1&amp;download=1&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;rtl=0&amp;logo_link=&amp;btn-skin=7&amp;size=300&quot; loading=&quot;lazy&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content:encoded></item></channel></rss>
